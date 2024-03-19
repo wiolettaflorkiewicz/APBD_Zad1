@@ -36,3 +36,22 @@ static double getAverage(int[] numbers)
     }
     return sum / numbers.Length;
 }
+
+static int getMaxValue(int[] numbers)
+{
+    if (numbers == null || numbers.Length == 0)
+    {
+        throw new ArgumentException("it cannot be an empty table");
+    }
+
+    int maxValue = numbers[0];
+    for (int i = 1; i < numbers.Length; i++)
+    {
+        if (numbers[i] > maxValue)
+        {
+            maxValue = numbers[i];
+        }
+    }
+    return maxValue;
+}
+

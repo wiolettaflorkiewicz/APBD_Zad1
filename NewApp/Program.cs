@@ -21,3 +21,18 @@ while (i < 10)
 
     i++;
 }
+
+Console.WriteLine("feature-average");
+
+static double getAverage(int[] numbers)
+{
+    if (numbers == null || numbers.Length == 0)
+        throw new ArgumentException("it cannot be an empty table", nameof(numbers));
+
+    double sum = 0;
+    foreach (int num in numbers)
+    {
+        sum += num;
+    }
+    return sum / numbers.Length;
+}

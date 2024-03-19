@@ -11,3 +11,13 @@ static int Suma(int a, int b)
 }
 
 Console.WriteLine($"Suma 3 + 4 = {Suma(3, 4)}");
+
+Console.WriteLine("Modyfikacja 3");
+int i = 0; 
+
+while (i < 10) 
+{
+    Console.WriteLine("i = {0}", i);
+
+    i++;
+}

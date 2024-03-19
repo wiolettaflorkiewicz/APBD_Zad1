@@ -29,12 +29,12 @@ static double getAverage(int[] numbers)
     if (numbers == null || numbers.Length == 0)
         throw new ArgumentException("it cannot be an empty table", nameof(numbers));
 
-    double sumTotal = 0;
+    double totalSum = 0;
     foreach (int num in numbers)
     {
-        sumTotal += num;
+        totalSum += num;
     }
-    return sumTotal / numbers.Length;
+    return totalSum / numbers.Length;
 }
 
 static int getMaxValue(int[] numbers)
